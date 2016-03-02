@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Brown50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="에너지 빈곤층이란?"
+                android:textSize="13sp"
+                android:textColor="@color/Teal500"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 광열비(전기료, 연료, 난방비)를 기준으로 에너지 구입비용이 가구 소득의 10%이상인 가구."
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 소득대비에 비해 광열비 비중이 높아서 의식주에 써야 할 비용이 상대적으로 적어지고 따라서 에너지를 필요한 만큼 사용하기 힘든 계층."
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 저소득으로 인해 최소한의 에너지마저 제대로 공급받지 못하고 있는 가구."
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="16dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="에너지 빈곤층 대상 여부"
+                android:textSize="13sp"
+                android:textColor="@color/Teal500"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingBottom="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="한달 전기세와 한달의 수입으로만 계산된 값이기 때문에 정확히 판단하기는 어렵습니다."
+                android:textSize="13sp"
+                android:textColor="@color/HintText"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="요금 정보"
+                android:textSize="13sp"
+                android:textColor="@color/SecondaryTextorIcons"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="한달 수입"
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+            <TextView
+                android:id="@+id/txtvPoolImport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0000원"
+                android:textSize="13sp"
+                android:textColor="@color/Teal500"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="한달 수입의 10%"
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+            <TextView
+                android:id="@+id/txtvPoolImport10pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0000원"
+                android:textSize="13sp"
+                android:textColor="@color/Teal500"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="이번달 요금"
+                android:textSize="13sp"
+                android:textColor="@color/Text"/>
+
+            <TextView
+                android:id="@+id/txtvPoolMonthMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0000원"
+                android:textSize="13sp"
+                android:textColor="@color/Teal500"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:paddingLeft="5dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip">
+
+            <ImageButton
+                android:id="@+id/btnPoolImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtvPoolTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="에너지 빈곤층 대상자 입니다."
+                android:textSize="15sp"
+                android:textColor="@color/Text"
+                android:layout_marginLeft="5dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Dividers"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dip"
+        android:background="@color/white"></LinearLayout>
+
+
+</LinearLayout>

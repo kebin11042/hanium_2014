@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".4"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_bottom"
+        android:paddingBottom="8px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:background="@color/Brown500">
+
+            <TextView
+                android:id="@+id/txtvWattcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wattcher"
+                android:textColor="@color/white"
+                android:textSize="55sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dip" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight=".5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:paddingBottom="15dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dip">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/Text"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="5dip"/>
+
+                <EditText
+                    android:id="@+id/edtxLoginID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/Text"
+                    android:textSize="16sp"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/browntheme_edit_text_holo_light"
+                    android:layout_marginBottom="2dip"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PW"
+                    android:textSize="12sp"
+                    android:textColor="@color/Text"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="5dip"/>
+
+                <EditText
+                    android:id="@+id/edtxLoginPW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="16sp"
+                    android:textColor="@color/Text"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/browntheme_edit_text_holo_light"
+                    android:layout_marginBottom="2dip"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|bottom"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:background="@android:drawable/dialog_holo_light_frame">
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_rectangle_brown"
+                        android:text="Log In"
+                        android:onClick="mOnClick"
+                        android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@android:drawable/dialog_holo_light_frame">
+
+                <Button
+                    android:id="@+id/btnJoin"
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:text="Join"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_rectangle_brown"
+                    android:onClick="mOnClick" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

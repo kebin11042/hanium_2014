@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|left"
+    android:background="@color/Brown500">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/previous"
+        android:onClick="mOnClick"
+        android:background="@drawable/imgbtn_brown700"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+    <TextView
+        android:id="@+id/txtvActionbarPayInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="월간 세부 전기요금"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dip"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

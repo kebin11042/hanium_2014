@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Brown500"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/previous"
+        android:background="@drawable/imgbtn_brown700"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:onClick="mOnClick"/>
+
+        <TextView
+            android:id="@+id/txtvActionbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:text="aaa"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|right">
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/walking"
+            android:background="@drawable/imgbtn_brown700"
+            android:onClick="mOnClick"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"/>
+
+        </LinearLayout>
+
+</LinearLayout>

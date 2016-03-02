@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvPayTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="월간 330kw/h 사용시 전기요금 계산"
+                android:textSize="18sp"
+                android:layout_margin="5dip"
+                android:textColor="@color/Text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dip"
+                android:layout_margin="3dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기본요금 : "
+                    android:textSize="15sp"
+                    android:textColor="@color/Text"/>
+
+                <TextView
+                    android:id="@+id/txtvPayBasic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,850 원"
+                    android:textSize="15sp"
+                    android:textColor="@color/Teal500"/>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dip"
+                android:padding="8dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전력량요금 : "
+                        android:textSize="15sp"
+                        android:textColor="@color/Text"/>
+
+                    <TextView
+                        android:id="@+id/txtvPayElec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45868 원"
+                        android:textSize="15sp"
+                        android:textColor="@color/Teal500"/>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPayLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dip"
+                        android:layout_margin="3dip">
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <TextView
+                            android:id="@+id/txtvPayLevel6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="6단계 : 100kWh * 60.7원 = 6070 원"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dip"
+                    android:padding="8dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전기요금계(기본요금 + 전력량요금) "
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Text"/>
+
+                    <TextView
+                        android:id="@+id/txtvPayBasicElec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": 3850 원 + 45868 원 = 49718 원"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Teal500"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dip"
+                android:padding="8dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부가가치세(원미만 4사 5입)"
+                    android:textSize="15sp"
+                    android:textColor="@color/Text"/>
+
+                <TextView
+                    android:id="@+id/txtvPayPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": 49718 원 * 0.1 = 4972원"
+                    android:textSize="15sp"
+                    android:textColor="@color/Teal500"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dip"
+                android:padding="8dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전력산업기반기금(10원미만 절사) "
+                    android:textSize="15sp"
+                    android:textColor="@color/Text"/>
+
+                <TextView
+                    android:id="@+id/txtvPayIndustry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": 49718 원 * 0.037 = 1830 원"
+                    android:textSize="15sp"
+                    android:textColor="@color/Teal500"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dip"
+                    android:padding="8dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="청구금액(전기요금계 + 부가가치세 + 전력산업기반기금)"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Text"/>
+
+                    <TextView
+                        android:id="@+id/txtvPayTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": 49718원 + 4972원 + 1830원 = 56520 원"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/Teal500"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="계산된 금액은"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/Text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/txtvPayTotal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="209290"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:textColor="@color/Teal500" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 원 입니다."
+                        android:textSize="20sp"
+                        android:textColor="@color/Text"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

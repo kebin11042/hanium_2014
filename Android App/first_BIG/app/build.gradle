@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "firstbig.com.example.first_big"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('debug.keystore')
+            storePassword 'dbsksl04'
+            keyAlias 'kebin1104'
+            keyPassword 'dbsksl04'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('libs/achartengine-1.1.0.jar')
+    compile 'com.android.support:appcompat-v7:20.0.0'
+}

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Brown50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" 님의 정보"
+                    android:textSize="20sp"
+                    android:textColor="@color/Text"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"
+                android:layout_marginBottom="8dip"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="기기 정보"
+                        android:textSize="13sp"
+                        android:textColor="@color/HintText"
+                        android:paddingLeft="16dip"
+                        android:paddingTop="8dip"
+                        android:paddingBottom="8dip"/>
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtvDeviceInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loading..."
+                            android:textSize="18sp"
+                            android:textColor="@color/Text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <ImageButton
+                                android:id="@+id/btnConnDevice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/settings2"
+                                android:layout_marginRight="10dip"
+                                android:background="@drawable/imgbtn_brown200"/>
+
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"
+                    android:layout_marginBottom="8dip"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="목표금액 정보"
+                        android:textSize="13sp"
+                        android:textColor="@color/HintText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingLeft="16dip"
+                        android:paddingTop="8dip"
+                        android:paddingBottom="8dip"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txtvGoal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loading..."
+                            android:textSize="18sp"
+                            android:textColor="@color/Text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <ImageButton
+                                android:id="@+id/btnGoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/settings2"
+                                android:background="@drawable/imgbtn_brown200"
+                                android:layout_marginRight="10dip"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"
+                    android:layout_marginBottom="8dip"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:paddingLeft="16dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="한달 수입"
+                        android:textSize="13sp"
+                        android:textColor="@color/HintText"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:paddingLeft="16dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip">
+
+                    <TextView
+                        android:id="@+id/txtvImport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading..."
+                        android:textSize="18sp"
+                        android:textColor="@color/Text"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageButton
+                            android:id="@+id/btnImport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/settings2"
+                            android:background="@drawable/imgbtn_brown200"
+                            android:layout_marginRight="10dip"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/Dividers"
+                    android:layout_marginBottom="8dip"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

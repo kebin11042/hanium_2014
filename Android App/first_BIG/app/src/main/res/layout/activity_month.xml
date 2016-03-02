@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="3dip"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtvMonthYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2014"
+                        android:gravity="center"
+                        android:textColor="@color/HintText" />
+
+                    <LinearLayout
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/btnMonthPrev"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/back"
+                                    android:scaleType="centerCrop"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/txtvMonth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="8 월"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Teal500"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="left">
+
+                                <ImageButton
+                                    android:id="@+id/btnMonthNext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/next"
+                                    android:scaleType="centerCrop"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutMonthGraph"
+                android:layout_width="match_parent"
+                android:layout_height="400dip"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="4dip"
+                android:layout_marginTop="10dip">
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/Dividers"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dip"
+                android:layout_margin="4dip">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="정보"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Text"
+                    android:layout_marginBottom="5dip"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="평균 전력 사용량"
+                        android:textColor="@color/SecondaryTextorIcons"/>
+
+                    <TextView
+                        android:id="@+id/txtvMonthAvgElecData"
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="25 kw/h"
+                        android:textColor="@color/Teal500"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="평균 전기 요금"
+                        android:textColor="@color/SecondaryTextorIcons"/>
+
+                    <TextView
+                        android:id="@+id/txtvMonthAvgMoney"
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Loading..."
+                        android:textColor="@color/Teal500"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="최고 사용량"
+                        android:textColor="@color/SecondaryTextorIcons"/>
+
+                    <TextView
+                        android:id="@+id/txtvMonthMaxElecData"
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Loading..."
+                        android:textColor="@color/Teal500"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="최저 사용량"
+                        android:textColor="@color/SecondaryTextorIcons"/>
+
+                    <TextView
+                        android:id="@+id/txtvMonthMinElecData"
+                        android:layout_width="50dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Loading..."
+                        android:textColor="@color/Teal500"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                android:gravity="right">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shdow_circle55"
+                    android:layout_marginTop="32dip"
+                    android:layout_marginRight="7dip">
+
+                    <ImageButton
+                        android:id="@+id/btnThisMonth"
+                        android:layout_width="55dip"
+                        android:layout_height="55dip"
+                        android:src="@drawable/sinchronize_black"
+                        android:background="@drawable/imgbtn_circle_amber"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

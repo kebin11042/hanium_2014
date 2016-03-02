@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Brown50">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_bottom">
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dip"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtvDayYearMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2014 / 8"
+                        android:textColor="@color/HintText"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <ImageButton
+                                android:id="@+id/btnDayPrev"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/back"
+                                android:background="@color/white"/>
+
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtvDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today"
+                                android:textSize="20sp"
+                                android:textColor="@color/Teal500"
+                                android:onClick="mOnClick"/>
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="left">
+
+                            <ImageButton
+                                android:id="@+id/btnDayNext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/next"
+                                android:background="@color/white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dip"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/white_frame">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginBottom="5dip"
+                        android:padding="8dip"
+                        android:layout_margin="3dip">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="월 정보"
+                            android:textSize="13sp"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="5dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="전력 누계량"
+                                android:textSize="15sp"
+                                android:textColor="@color/Text"/>
+
+                            <TextView
+                                android:id="@+id/txtvDayMontnSumData"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Loading..."
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dip"
+                                android:textColor="@color/Text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="10dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="누계 금액"
+                                android:textSize="15sp"
+                                android:textColor="@color/Text"/>
+
+                            <TextView
+                                android:id="@+id/txtvDayMontnSumMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Loading..."
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dip"
+                                android:textColor="@color/Text"/>
+
+                            <ImageButton
+                                android:id="@+id/btnMonthPayInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/calculator"
+                                android:background="@drawable/imgbtn_brown200"
+                                android:layout_marginLeft="20dip"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/Dividers"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dip"
+                        android:layout_margin="3dip">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="일 정보"
+                            android:textColor="@color/SecondaryTextorIcons"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginLeft="5dip">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:text="사용한 전력량"
+                                android:textColor="@color/Text"/>
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:id="@+id/txtvDayElec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Loading..."
+                                android:textSize="18sp"
+                                android:paddingLeft="10dip"
+                                android:textColor="@color/Text"/>
+
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginLeft="5dip">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="사용 전기 요금"
+                                android:textColor="@color/Text"/>
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:id="@+id/txtvDayMoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Loading..."
+                                android:textSize="18sp"
+                                android:paddingLeft="10dip"
+                                android:textColor="@color/Text"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginLeft="5dip">
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="목표 금액"
+                                android:textColor="@color/Text"/>
+
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:id="@+id/txtvDayGoalMoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Loading..."
+                                android:textSize="18sp"
+                                android:paddingLeft="10dip"
+                                android:textColor="@color/Text"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/Dividers"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="5dip"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dip"
+                            android:layout_marginLeft="5dip"
+                            android:padding="8dip">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="에너지 빈곤층 대상 여부"
+                                android:textColor="@color/SecondaryTextorIcons"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginTop="8dip">
+
+                                <ImageButton
+                                    android:id="@+id/btnImgEnergyPool"
+                                    android:layout_marginLeft="5dip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/txtvDayEnergyPool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loading..."
+                                    android:textSize="18sp"
+                                    android:paddingLeft="10dip"
+                                    android:onClick="mOnClick"/>
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/shdow_circle55">
+
+                <ImageButton
+                    android:id="@+id/btnToday"
+                    android:layout_width="55dip"
+                    android:layout_height="55dip"
+                    android:src="@drawable/sinchronize_black"
+                    android:background="@drawable/imgbtn_circle_amber" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

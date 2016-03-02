@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_bottom"
+        android:paddingBottom="7px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Brown500"
+            android:paddingTop="40dip"
+            android:paddingBottom="10dip">
+
+            <TextView
+                android:id="@+id/txtvJoinTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join Member"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:layout_marginTop="20dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="12sp"
+            android:textColor="@color/Text"
+            android:layout_marginLeft="3dip"/>
+
+        <EditText
+            android:id="@+id/edtxJoinID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Text"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:background="@drawable/browntheme_edit_text_holo_light"
+            android:layout_marginBottom="2dip"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textColor="@color/Text"
+            android:textSize="12sp"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="5dip"/>
+
+        <EditText
+            android:id="@+id/edtxJoinName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Text"
+            android:textSize="16sp"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:background="@drawable/browntheme_edit_text_holo_light"
+            android:layout_marginBottom="2dip"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textColor="@color/Text"
+            android:textSize="12sp"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="5dip"/>
+
+        <EditText
+            android:id="@+id/edtxJoinPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/Text"
+            android:textSize="16sp"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:background="@drawable/browntheme_edit_text_holo_light"
+            android:layout_marginBottom="2dip"/>
+
+        <TextView
+            android:id="@+id/txtvPwCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textSize="12sp"
+            android:textColor="@color/Text"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="5dip"/>
+
+        <EditText
+            android:id="@+id/edtxJoinPwCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/Text"
+            android:textSize="16sp"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:background="@drawable/browntheme_edit_text_holo_light"
+            android:layout_marginBottom="2dip"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="16dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+            <Button
+                android:id="@+id/btnJoinOK"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="Join Ok"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_rectangle_brown"
+                android:onClick="mOnClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame">
+
+            <Button
+                android:id="@+id/btnJoinBack"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle_brown"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:onClick="mOnClick"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

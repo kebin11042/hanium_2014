@@ -33,10 +33,10 @@ Arduino와 Server, Android 애플리케이션으로 **실시간 사용 전력을
 ### SCREEN SHOT
 -------
 
-- H/W
-<img src="img/screen_shot_1.png" width="400px"> <img src="img/screen_shot_2.png" width="300px">
+- H/W  
+<img src="img/screen_shot_1.png" width="300px"> <img src="img/screen_shot_2.png" width="300px">
 
-- Android App
-<img src="img/screen_shot_3.png" width="300px"> <img src="img/screen_shot_4.png" width="300px"> <img src="img/screen_shot_5.png" width="300px"> 
+- Android App  
+<img src="img/screen_shot_3.png" width="220px"> <img src="img/screen_shot_4.png" width="220px"> <img src="img/screen_shot_5.png" width="220px"> 
 
 [1]: ppt/hanium_2014.pdf
